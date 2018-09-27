@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	project "github.com/fenwickelliott/project-models"
+)
 
 func main() {
-	fmt.Println("I be a API")
+	thing := project.Thing{
+		Declaration: "I be a API",
+	}
+
+	fmt.Println(thing.Declaration)
 }
